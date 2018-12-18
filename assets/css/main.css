@@ -1,0 +1,277 @@
+/*
+Material Color Pallete: https://www.materialpalette.com/colors
+*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+@media(min-width: 992px){
+  .page-scroll {
+    overflow-y: scroll;
+    height: 100vh;
+  }
+  .page-scroll:after {
+    content: "";
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    background: #fff;
+    right: 0px;
+    z-index: 1;
+    position: fixed;
+  }
+}
+.page-content {
+  padding: 50px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+@media(max-width: 1200px){
+  .page-content {
+    padding: 40px 30px 30px 30px;
+  }
+}
+
+@media(max-width: 991px) {
+  .js .page {
+    overflow-y: auto;
+  }
+  .page-content {
+    padding: 90px 30px 30px;
+  }
+}
+
+@media(max-width: 767px) {
+  .page-content {
+    padding: 85px 20px 30px;
+  }
+}
+.v-center-box {
+  min-height: 100%;
+}
+/*
+=====================================
+Navigation Toolbar
+=====================================
+*/
+/* Looks like I don't need this part
+.title{
+    font-size: 30px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 50px;
+    padding: 5px 15px;
+}
+*/
+
+.topbar{
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    z-index: 2; /* make it as the front object thus make it clickable */
+}
+
+.topbar div{
+    display: block;
+}
+
+.topbar div.left{
+    float: left;
+}
+
+.topbar div.right{
+    float: right;
+    transition: 0.5s;
+}
+
+.topbar div a{
+    display: block;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+.hamburger-button{
+  background-color: #607d8b;
+}
+/* Navigation part */
+nav.menu{
+  top: 59.5px;
+  right: 0%;
+  position: fixed;
+  z-index: 1;
+  background-color: #263238;
+  width: 250px;
+}
+nav.menu ul{
+  padding: 0px;
+  margin: 0px;
+}
+nav.menu ul li{
+  border-top: 1px solid rgba(255,255,255,0.5);
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+nav.menu ul a{
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/*
+=====================================
+Main Page Body
+=====================================
+*/
+
+.home-user-avtar {
+  padding-top: 60px;
+}
+.home-banner .page-content .v-center-box {
+  min-height: inherit;
+}
+.home-banner .page-content {
+  padding-top: 30px;
+}
+.home-text {
+  padding: 20px 20px 70px;
+}
+.leftish-img-div{
+  background-color: #03a9f4;
+}
+.leftish-img{
+  max-height: 100vh;
+  margin: 0 auto;
+}
+/*
+=====================================
+Button
+Using https://www.bestcssbuttongenerator.com/
+=====================================
+*/
+.btn {
+	background-color:#7cb342;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	padding:9px 20px;
+  text-decoration:none;
+  text-transform: uppercase;
+}
+.btn:hover {
+  transition: 0.5s;
+  background-color:#030801;
+  color:#ffffff;
+}
+/*
+=====================================
+Circle-styled Social Icon
+=====================================
+*/
+/* Pin to the bottom left */
+.social-icons {
+  right: auto;
+  left: 50px;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-icons li{
+  display: inline-block;
+  vertical-align: middle;
+}
+.social-icons a{
+  width: 30px;
+  height: 30px;
+  background: #111;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.social-icons a:hover{
+  background: #757575;
+  color: #fff;
+}
+/*
+=====================================
+Typography
+=====================================
+*/
+.title{
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  z-index: -1;
+  border-bottom: 1px solid #ddd;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 0 10px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.title::after{
+  height: 8px;
+  width: 50px;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  content: "";
+  z-index: -1;
+  transform: skew(-36deg);
+  -webkit-transform: skew(-36deg);
+  background: #FFC815;
+  box-sizing: border-box;
+}
+.dark-color{
+  color: #000000;
+}
+.bold{
+  font-weight: 600;
+}
+.gray-color{
+  color: #575757;
+}
+.text-after-title{
+  margin-top: 20px;
+}
+textarea{
+  min-height: 200px;
+}
+.contact-form{
+  margin: 30px 15px 30px 15px;
+}
+.contact-icon{
+  color: #388e3c;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.contact-text{
+  text-align: center;
+}
