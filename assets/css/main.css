@@ -6,6 +6,12 @@ body{
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
+
+/*
+=====================================
+Screen Size Compatilibity
+=====================================
+*/
 @media(min-width: 992px){
   .page-scroll {
     overflow-y: scroll;
@@ -22,9 +28,9 @@ body{
     position: fixed;
   }
 }
+
 .page-content {
   padding: 50px;
-  /*max-width: 1200px;*/
   width: 100%;
 }
 
@@ -48,7 +54,7 @@ body{
     padding: 85px 20px 30px;
   }
 }
-.v-center-box {
+.full-height {
   min-height: 100%;
 }
 /*
@@ -131,22 +137,29 @@ Main Page Body
 =====================================
 */
 
-.home-user-avtar {
+.leftish-image-div {
   padding-top: 60px;
 }
-.home-banner .page-content .v-center-box {
+.content-banner .page-content {
   min-height: inherit;
 }
-.home-banner .page-content {
+.content-banner .page-content {
   padding-top: 30px;
 }
-.home-text {
+.content-text {
   padding: 20px 20px 70px;
 }
-.leftish-img-div{
+.leftish-div-1{
   background-color: #03a9f4;
 }
+.leftish-div-2{
+  background-color: #673ab7;
+}
+.leftish-div-3{
+  background-color: #e91e63;
+}
 .leftish-img{
+  max-width: 100%;
   max-height: 100vh;
   margin: 0 auto;
 }
@@ -274,4 +287,66 @@ textarea{
 }
 .contact-text{
   text-align: center;
+}
+/*
+Home Intro Typography
+*/
+.content-text {
+  padding-left: 50px;
+  width: 100%;
+}
+.content-text h6 {
+  font-size: 18px;
+  margin: 0 0 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1
+}
+
+.content-text h6:after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.content-text h1 {
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 10px;
+}
+
+.content-text h1:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: -10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.content-text p {
+  text-transform: uppercase;  
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+.content-text .btn-bar {
+  margin-top: 20px;
+}
+.box-center{
+  min-height: calc(100vh - 100px);
 }
