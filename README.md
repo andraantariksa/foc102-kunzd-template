@@ -1,8 +1,8 @@
 # Kunzd Template
 
-The template was made as a Web Design course final project.
+The template was made as a Web Design (FOC103) course final project.
 
-The Kunzd name itself was... randomly generated German name, Kunz Lohmüller.
+The Kunzd name itself is a randomly generated German name, Kunz Lohmüller.
 
 ## Demo
 
